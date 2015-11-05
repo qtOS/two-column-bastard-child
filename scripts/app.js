@@ -1,5 +1,6 @@
 window.onload = function(){
 
+
   //basic slectors
 
   //declare a slector named shell
@@ -7,7 +8,12 @@ window.onload = function(){
   var shell = document.getElementById('content-one');
   var status = document.getElementById('content-one');
   var btn = document.getElementById('addPoint');
-  var btn2 = document.getElementById('mudkip-btn')
+  var btn2 = document.getElementById('mudkip-btn');
+
+  $(btn2).click(function(){
+    console.log('clicked')
+    $(btn2).addClass('ching');
+  });
   //var btn = document.querySelector('#addPoint');
   user.initialize(status);
   //selector.addEventListener(eventType, function())
@@ -18,7 +24,7 @@ window.onload = function(){
   //put a mf mudkip on the page
   btn2.addEventListener('click', function(){
     addMudkip.clicker();
-  })
+  });
 
 }
 
